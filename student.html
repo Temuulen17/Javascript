@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+>
+</head>
+<body>
+    <table class="table is-bordered is-striped">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>surname</th>
+                <th>gmail</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody id="studentsList"></tbody>
+    </table>
+    <script>
+        const students = [
+  { "name": "Бат", "surname": "Эрдэнэ", "gmail": "bat.erdene@gmail.com", "age": 25 },
+  { "name": "Энх", "surname": "Баяр", "gmail": "enkh.bayar@gmail.com", "age": 28 },
+  { "name": "Түвшин", "surname": "Бат", "gmail": "tuvshin.bat@gmail.com", "age": 31 },
+  { "name": "Оюун", "surname": "Эрдэнэ", "gmail": "oyun.erdene@gmail.com", "age": 27 },
+  { "name": "Ган", "surname": "Болд", "gmail": "gan.bold@gmail.com", "age": 33 },
+  { "name": "Мөнх", "surname": "Эрдэнэ", "gmail": "munkh.erdene@gmail.com", "age": 26 },
+  { "name": "Алтан", "surname": "Цэцэг", "gmail": "altan.tsetseg@gmail.com", "age": 29 },
+  { "name": "Сар", "surname": "Гэрэл", "gmail": "sar.gerel@gmail.com", "age": 24 },
+  { "name": "Билэгт", "surname": "Бат", "gmail": "bilegt.bat@gmail.com", "age": 30 },
+  { "name": "Ану", "surname": "Тунгалаг", "gmail": "anu.tungalag@gmail.com", "age": 32 },
+  { "name": "Эрдэнбат", "surname": "Ганбаатар", "gmail": "erdenebat.ganbaatar@gmail.com", "age": 29 },
+  { "name": "Солонго", "surname": "Энхжаргал", "gmail": "solongo.enkhjargal@gmail.com", "age": 23 },
+  { "name": "Болд", "surname": "Эрдэнэ", "gmail": "bold.erdene@gmail.com", "age": 34 },
+  { "name": "Хулан", "surname": "Баян", "gmail": "khulan.bayan@gmail.com", "age": 28 },
+  { "name": "Тэмүүлэн", "surname": "Батбаяр", "gmail": "temuulen.batbayar@gmail.com", "age": 26 },
+  { "name": "Нар", "surname": "Эрдэнэтуяа", "gmail": "nar.erdenetuya@gmail.com", "age": 25 },
+  { "name": "Саруул", "surname": "Алтангэрэл", "gmail": "saruul.altangerel@gmail.com", "age": 31 },
+  { "name": "Дэлгэр", "surname": "Мөнхбат", "gmail": "delger.munkhbat@gmail.com", "age": 27 },
+  { "name": "Цэрэн", "surname": "Бат-Эрдэнэ", "gmail": "tseren.bat-erdene@gmail.com", "age": 30 },
+  { "name": "Оюунцэцэг", "surname": "Ганболд", "gmail": "oyuntsetseg.ganbold@gmail.com", "age": 29 }
+];
+let output = "";
+
+for (let i = 0; i < students.length; i++) {
+    output += `
+    <tr>
+        <td>${students[i].name}</td>
+        <td>${students[i].surname}</td>
+        <td>${students[i].gmail}</td>
+        <td>${students[i].age}</td>
+        </tr>`
+}
+document.getElementById("studentsList").innerHTML = output;
+
+
+
+
+
+
+
+
+    </script>
+    <table>
+   
+</body>
+</html>
